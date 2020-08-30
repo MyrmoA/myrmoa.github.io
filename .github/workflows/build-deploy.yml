@@ -28,4 +28,4 @@ jobs:
         ng build --prod=true --outputPath=docs
     ## Deploy Step
     - name: Deploy
-      run: ng deploy
+      run: ng deploy --no-silent
