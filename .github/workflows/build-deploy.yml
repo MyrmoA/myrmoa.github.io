@@ -49,6 +49,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: actions/setup-node@v1 # install node and npm
+      with:
+        node-version: '10.x'
+    - uses: actions/cache@v1 # utilize cache
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    steps:
     - uses: actions/checkout@v2
     - name: All things angular
       uses: AhsanAyaz/angular-deploy-gh-pages-actions
