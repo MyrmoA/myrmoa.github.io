@@ -24,4 +24,5 @@ jobs:
       run: |
         npm install
         npm run ci:build
-        npm run deploy --no-silent
+        ng add angular-cli-ghpages
+        ng deploy --no-silent
