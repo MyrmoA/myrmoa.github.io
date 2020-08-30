@@ -23,7 +23,8 @@ jobs:
     - name: Build 
       run: |
         npm install
-        npm i -g angular-cli-ghpages
+        npm install -g @angular/cli
+        npm install -g angular-cli-ghpages
         ng build --prod=true --outputPath=docs
     ## Deploy Step
     - name: Deploy
