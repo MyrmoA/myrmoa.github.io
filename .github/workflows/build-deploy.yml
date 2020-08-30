@@ -28,9 +28,9 @@ jobs:
         ng build --prod=true --outputPath=docs
     ## Deploy Step
     - name: Deploy
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: ng deploy --no-silent
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
 
 
