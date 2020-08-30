@@ -1,8 +1,4 @@
-# Arie - Developer Portfolio Site
-http://myrmoa.github.io
-
-
-## About
+# [Arie](http://myrmoa.github.io)
 An angular web application I developed to host my portfolio and to get a feel for Github Actions. 
 
 ## Notes
