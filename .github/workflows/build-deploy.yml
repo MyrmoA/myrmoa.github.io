@@ -1,17 +1,29 @@
 name: Build & Deploy
+
 on:
   push:
     branches:
-      - develop
+      - master
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: All things angular
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions
+    - name: Checkout
+      uses: actions/checkout@v1
+    - uses: actions/setup-node@v1 # install node and npm
       with:
-        #github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
-        angular_dist_build_folder: docs
+        node-version: '10.x'
+    - uses: actions/cache@v1 # utilize cache
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    ## Build Step            
+    - name: Build 
+      run: |
+        npm install
+        ng build --prod=true --outputPath=docs
+    ## Deploy Step
+    - name: Deploy
+      run: ng deploy
