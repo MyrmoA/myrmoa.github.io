@@ -1,0 +1,17 @@
+name: Build & Deploy
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: All things angular
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions
+      with:
+        #github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
+        angular_dist_build_folder: docs
