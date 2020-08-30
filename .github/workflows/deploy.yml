@@ -24,4 +24,4 @@ jobs:
       run: |
         npm install
         npm run ci:build
-        npm run ng deploy --no-silent
+        npm run deploy --no-silent
