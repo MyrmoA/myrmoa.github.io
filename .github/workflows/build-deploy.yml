@@ -1,3 +1,7 @@
+## TODO: Switch to having these workflows:
+  ## = develop - Run Tests
+  ## = master - Deploy to gh-pages branch (needs to switch the Repo Pages Settings to deploy gh-pages)
+
 name: Build & Deploy
 
 on:
