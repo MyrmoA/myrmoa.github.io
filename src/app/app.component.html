@@ -1,4 +1,4 @@
-<nav-bar class="nav-bar" (drawerToggleEmitter)="toggleDrawer($event)"></nav-bar>
+<app-header class="nav-bar"></app-header>
 <main class="container main-section navbar-padding">
   <router-outlet></router-outlet>
   <span *ngIf="isHomeRoute()" class="home-text">{{getHomeText()}}</span>

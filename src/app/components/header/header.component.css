@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: darkslateblue;
+    }
+}
+
+.am-logo {
+	max-height: 2em;
+}
+
+.navbar {
+    background-color: darkslateblue;
+}
+
+.nav-item {
+    color: white;
+}

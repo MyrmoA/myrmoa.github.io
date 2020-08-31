@@ -1,8 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component'
-import { NavDrawerComponent } from './components/nav-bar/nav-drawer/nav-drawer.component'
+import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component'
 import { AboutComponent } from './about/about.component'
 import { ProjectsComponent } from './projects/projects.component'
@@ -16,9 +15,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         AboutComponent,
-        NavBarComponent,
+        HeaderComponent,
         FooterComponent,
-        NavDrawerComponent,
         ProjectsComponent
       ],
     }).compileComponents();
