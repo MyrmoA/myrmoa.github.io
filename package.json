@@ -3,15 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "deploy": "ng deploy",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test --code-coverage=true --watch=false",
-    "tests:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "tests:ci": "",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ci:build": "npm run clean && ng build --prod=true --outputPath=docs",
-    "ci:test": "npm run clean && npm run tests:ci"
+    "ci:build": "npm ci && ng build --prod=true --outputPath=docs",
+    "ci:tests": "ng test --watch=false --browsers=ChromeHeadlessCustom"
   },
   "private": true,
   "dependencies": {
