@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "ci:build": "ng build --prod=true --outputPath=docs",
-    "test": "ng test",
+    "test": "ng test --code-coverage=true --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
