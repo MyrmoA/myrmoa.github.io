@@ -17,7 +17,7 @@ jobs:
       # Install
       - name: Install 🔧
         run: |
-          npm ci
+          npm install
 
       # Run Tests
       - name: Run Tests 👾

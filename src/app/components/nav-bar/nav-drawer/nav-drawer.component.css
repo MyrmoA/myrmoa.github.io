@@ -13,19 +13,19 @@
 }
 
 :host.drawer-open {
-  width: 70vw;
+  width: 40vw;
   opacity: 1;
 }
 
 .navbar-nav.override {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .nav-item.override {
   font-size: 1.25rem;
   padding: 1rem 0 0.5rem 0;
   color: white;
-  border-bottom: 1px solid rgba(20, 20, 20, 0.9);
+  border-bottom: 2px solid whitesmoke;
 }
 
 .nav-link.override {

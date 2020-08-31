@@ -1,5 +1,5 @@
 <nav-bar class="nav-bar" (drawerToggleEmitter)="toggleDrawer($event)"></nav-bar>
 <main class="container main-section navbar-padding">
   <router-outlet></router-outlet>
-  <span class="dummy-text">{{getDummyText()}}</span>
+  <span *ngIf="isHomeRoute()" class="home-text">{{getHomeText()}}</span>
 </main>

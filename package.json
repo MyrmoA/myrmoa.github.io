@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test --code-coverage=true --watch=false",
-    "tests:ci": "",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ci:build": "npm ci && ng build --prod=true --outputPath=docs",

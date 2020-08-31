@@ -6,7 +6,7 @@
   }
   
   :host.drawer-open {
-    left: 70%;
+    left: 40%;
   }
   
   .nav-bar {
@@ -28,7 +28,7 @@
     min-height: 125vh;
   }
   
-  .dummy-text {
+  .home-text {
     display: block;
     font-family: Verdana, Geneva, sans-serif;
     font-style: italic;
