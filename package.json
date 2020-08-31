@@ -6,10 +6,12 @@
     "deploy": "ng deploy",
     "start": "ng serve",
     "build": "ng build",
-    "ci:build": "ng build --prod=true --outputPath=docs",
     "test": "ng test --code-coverage=true --watch=false",
+    "tests:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ci:build": "npm run clean && ng build --prod=true --outputPath=docs",
+    "ci:test": "npm run clean && npm run tests:ci"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +47,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
+    "puppeteer": "^5.2.1",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"

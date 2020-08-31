@@ -1,4 +1,4 @@
-name: Deploy
+name: Build & Deploy
 
 on:
   push:
@@ -27,6 +27,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        npm install
+        npm ci
         npm run ci:build
         ng deploy --no-silent --email="arie.myrmo@gmail.com" --name="MyrmoA"
