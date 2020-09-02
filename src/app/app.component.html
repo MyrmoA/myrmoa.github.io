@@ -1,5 +1,8 @@
-<app-header class="nav-bar"></app-header>
-<main class="container main-section navbar-padding">
-  <router-outlet></router-outlet>
-  <span *ngIf="isHomeRoute()" class="home-text">{{getHomeText()}}</span>
-</main>
+<div class="containerOne">
+  <app-header></app-header>
+  <main class="container navbar-padding">
+    <router-outlet></router-outlet>
+    <span *ngIf="isHomeRoute()" class="home-text">{{ getHomeText() }}</span>
+  </main>
+  <app-footer class="footer"></app-footer>
+</div>

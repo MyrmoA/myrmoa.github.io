@@ -1,40 +1,31 @@
-:host {
-    position: relative;
-    display: block;
-    left: 0;
-    transition: left 0.3s ease;
-  }
-  
-  :host.drawer-open {
-    left: 40%;
-  }
-  
-  .nav-bar {
-    position: fixed;
-    display: block;
-    top: 0;
-    width: 100vw;
-    z-index: 100;
-    background-color: darkslateblue;
-  }
-  
-  .navbar-padding {
-    display: block;
-    position: relative;
-    margin-top: 5rem;
-  }
-  
-  .main-section {
-    min-height: 125vh;
-  }
-  
-  .home-text {
-    display: block;
-    font-family: Verdana, Geneva, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    line-height: 1.5rem;
-    text-align: justify;
-  }
+.containerOne {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-padding {
+  display: block;
+  position: relative;
+  margin-top: 5.5rem;
+}
+
+.content {
+  margin-left: 1.5rem;
+  margin-right: 1.5em;
+}
+
+.home-text {
+  display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.footer {
+  margin-top: auto;
+}
