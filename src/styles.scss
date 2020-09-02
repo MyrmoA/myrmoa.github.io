@@ -2,4 +2,11 @@ html,
 body {
   overflow-x: hidden;
   height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.pageHeader h2 {
+  font-family: Verdana;
+  font-weight: 600 !important;
+  color: darkslateblue;
 }

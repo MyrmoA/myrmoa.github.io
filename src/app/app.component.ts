@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
     this.isDrawerOpen = isDrawerOpen;
   }
 
-  getHomeText(): string {
-    return 'Welcome! My name is Arie Myrmo, I am a software developer currently working for Arthrex in Southwest Florida';
-  }
+  getHomeIntroText: string =
+    "Welcome! My name is Arie Myrmo.<br/><br/> I am a software developer currently working for Arthrex, a global medical device company located in Southwest Florida. You can learn more about me <a routerLink='/about' routerLinkActive='active'>here</a>. I write here, occasionally speak at conferences, and work on a lot of different projects. You can learn more about me here. If you appreciate my work, consider becoming a sponsor.";
 }

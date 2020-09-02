@@ -11,21 +11,32 @@
 }
 
 .content {
-  margin-left: 1.5rem;
-  margin-right: 1.5em;
+  margin-bottom: 25px;
+  max-width: 720px;
 }
 
-.home-text {
+.home-intro-text {
   display: block;
-  font-family: Verdana, Geneva, sans-serif;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 520;
   font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   line-height: 1.5rem;
-  text-align: justify;
+  text-align: center;
+}
+
+.home-about-text {
+  display: block;
+  font-size: 0.9rem;
 }
 
 .footer {
   margin-top: auto;
+}
+
+.thumb-headShot {
+  max-height: 150px;
+  max-width: 150px;
+  border: 4.5px solid darkslateblue;
+  border-radius: 50%;
 }
