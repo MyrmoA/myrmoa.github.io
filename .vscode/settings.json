@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "tslint.alwaysShowStatus": true,
+  "tslint.autoFixOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

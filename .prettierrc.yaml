@@ -1,0 +1,11 @@
+# Prettier settings
+# Original configuration based off https://medium.com/@victormejia/setting-up-prettier-in-an-angular-cli-project-2f50c3b9a537
+printWidth: 120
+singleQuote: true
+useTabs: false
+tabWidth: 2
+semi: true
+bracketSpacing: true
+jsxBracketSameLine: false
+trailingComma: 'all'
+arrowParens: 'always'
