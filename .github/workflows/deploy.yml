@@ -1,11 +1,13 @@
-name: Build & Deploy
+name: Deploy
 
 on:
-  workflow_run:
-    workflows: ['Run Tests']
-    branches: [develop]
-    types:
-      - completed
+  repository_dispatch:
+    types: [trigger-deploy-workflow]
+  # workflow_run:
+  #   workflows: ['Run Tests']
+  #   branches: [develop]
+  #   types:
+  #     - completed
 
 jobs:
   build-and-deploy:
@@ -25,7 +27,7 @@ jobs:
           npm install -g @angular/cli@next
           ng add angular-cli-ghpages
 
-      - name: Build & Deploy
+      - name: Build & Deploy 🚀
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
