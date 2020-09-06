@@ -6,12 +6,6 @@ on:
     branches: [develop]
     types:
       - completed
-      - requested
-
-# Old deploys
-# push:
-#   branches:
-#     - develop
 
 jobs:
   build-and-deploy:
