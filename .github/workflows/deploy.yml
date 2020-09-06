@@ -14,15 +14,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Use Node.js 10.x
+      - name: Use Node.js 10.x 🎛
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
 
-      - name: Prepare
+      - name: Prepare 🛠
         run: |
           npm install -g @angular/cli@next
           ng add angular-cli-ghpages

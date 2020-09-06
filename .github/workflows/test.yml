@@ -23,8 +23,8 @@ jobs:
       - name: Run Tests 👾
         run: npm run ci:tests
 
-      # Trigger Deploy Workflow ✅
-      - name: Trigger Deploys
+      # Trigger Deploy Workflow
+      - name: Trigger Deploys ✅
         if: success()
         uses: peter-evans/repository-dispatch@v1
         with:
