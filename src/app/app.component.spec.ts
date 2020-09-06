@@ -23,8 +23,6 @@ describe('AppComponent', () => {
   it(`should have isHome()`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    console.log('\n\nIS True?');
-    console.log(app.isHome);
-    expect(app.isHome).toBeTruthy();
+    expect(app.isHome).toBeTrue();
   });
 });
