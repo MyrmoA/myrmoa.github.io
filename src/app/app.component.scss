@@ -15,11 +15,25 @@
   max-width: 720px;
 }
 
+.home-title-name {
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.home-title-dev {
+  display: block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 .home-intro-text {
   display: block;
   font-style: italic;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.4px;
   line-height: 1.5rem;
   text-align: center;
@@ -35,8 +49,10 @@
 }
 
 .thumb-headShot {
-  max-height: 150px;
-  max-width: 150px;
-  border: 4.5px solid darkslateblue;
+  // max-height: 150px;
+  // max-width: 150px;
+  height: 175px;
+  width: auto;
+  border: 5.5px solid darkslateblue;
   border-radius: 50%;
 }
