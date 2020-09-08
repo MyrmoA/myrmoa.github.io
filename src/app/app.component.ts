@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,15 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    // when navigating always open at top of page
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 
   isHome() {
     return this.router.url === '/';

@@ -5,54 +5,10 @@
 }
 
 .navbar-padding {
-  display: block;
-  position: relative;
   margin-top: 5.5rem;
-}
-
-.content {
-  margin-bottom: 25px;
-  max-width: 720px;
-}
-
-.home-title-name {
-  display: block;
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.home-title-dev {
-  display: block;
-  font-weight: 500;
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.home-intro-text {
-  display: block;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.4px;
-  line-height: 1.5rem;
-  text-align: center;
-}
-
-.home-about-text {
-  display: block;
-  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer {
   margin-top: auto;
-}
-
-.thumb-headShot {
-  // max-height: 150px;
-  // max-width: 150px;
-  height: 175px;
-  width: auto;
-  border: 5.5px solid darkslateblue;
-  border-radius: 50%;
 }
